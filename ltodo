@@ -1,0 +1,2 @@
+#!/bin/sh
+find . -regex '^\./[^\.].*\.js$' -print |xargs cat |grep TODO |gsed 's#.*//\s*TODO\(.*\)#\1#'
